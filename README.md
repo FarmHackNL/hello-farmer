@@ -9,8 +9,7 @@
 * kunnen zien wat er gebeurt op een boerderij, incl. een joehoe-factor
 
 ## naam
-* **hello farmer**
-* 
+hallo boer
 
 ## op basis van bestaande tools
 - [Boer en Bunder](http://boerbunder.nl)
@@ -31,10 +30,10 @@
 5. waar kun je het kopen
 
 ## taken
-A. flitsende presentatie
+* flitsende presentatie
   1. helder verwoorden wat we precies willen
   2. visueel ontwerp
-B. prototype
+* prototype
   1. business model
   2. data (basis landelijke set + Vechtdal)
   3. functioneel design
@@ -46,7 +45,3 @@ B. prototype
 We spraken met een boer. Hij houdt teeltplannen bij in een spreadsheet. Iedere week geeft hij aan de groothandel (Udea) door wat hij kan leveren, die gaan zorgen dat het ergens terecht komt. Gaat allemaal met de mail, geen gestructureerd datasysteem (wel voor droogwaren, niet voor vers). Voor nieuwe producten geeft hij het twee weken vantevoren door, andere schijnbaar wekelijks.
 
 Ieder jaar geeft hij aan de overheid (uiterlijk 15 mei) door welke percelen hij heeft, welke gewassen hij er het komende jaar gaat planten. Incl. oppervlakte, en wat mestgetallen e.d. Deel van die data is publiek beschikbaar via Boer en Bunder.
-
-Next: met Anne praten data van Boer en Bunder
-
-
