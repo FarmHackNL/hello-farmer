@@ -4456,7 +4456,7 @@
                 "produce_id": "pig",
                 "description": "Hier groeien onze scharrelende biggen tot een vleesvarken.",
                 "info_url": "http://overesch.nl/dieren/varkens/",
-                "vr_url": "http://rawgit.com/FarmHackNL/hello-farmer/master/prototype/src/assets/R0010134.jpg",
+                "vr_url": "http://farmhacknl.github.io/hello-farmer/R0010134.jpg",
                 "image_urls": [
                   "http://overesch.nl/wp-content/uploads/2015/10/header1-325x250.jpg",
                   "http://cdn.rawgit.com/FarmHackNL/hello-farmer/master/prototype/src/assets/photo-farmer-pig.png"
