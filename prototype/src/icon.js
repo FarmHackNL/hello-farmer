@@ -10,6 +10,7 @@ var icons = {
   cow: makeIcon(require('./assets/cow.png')),
   pig: makeIcon(require('./assets/pig.png')),
   kip: makeIcon(require('./assets/kip.png')),
+  graan: makeIcon(require('./assets/graan.png')),
   carrots: makeIcon(require('./assets/carrots.png')),
   pompoen: makeIcon(require('./assets/pompoen.png')),
   brocolli: makeIcon(require('./assets/brocolli.png')),

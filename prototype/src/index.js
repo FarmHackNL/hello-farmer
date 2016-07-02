@@ -40,7 +40,7 @@ function popupData(feature) {
     <h1>${props.name}</h1>
   `, false]);
   props.image_urls && items.push([
-    `<img src="${props.image_urls[0]}">`
+    `<div class="text-center"><img src="${props.image_urls[0]}"></div>`
   , false])
   props.description && items.push([props.description, false]);
   props.info_url && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', props.info_url])

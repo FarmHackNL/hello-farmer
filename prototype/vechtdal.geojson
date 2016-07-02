@@ -1600,7 +1600,8 @@
             "type": "Feature",
             "properties": {
                 "name": "graanteelt",
-                "description": ""
+                "description": "",
+                "crop_id": "graan"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1839,7 +1840,8 @@
             "type": "Feature",
             "properties": {
                 "name": "zomertarwe boer Rick",
-                "description": ""
+                "description": "",
+                "crop_id": "graan"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3636,7 +3638,8 @@
             "type": "Feature",
             "properties": {
                 "name": "granen",
-                "description": ""
+                "description": "",
+                "crop_id": "graan"
             },
             "geometry": {
                 "type": "Polygon",
