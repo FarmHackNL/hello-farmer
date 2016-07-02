@@ -1,3 +1,4 @@
+import $ from 'jquery';
 import L from 'leaflet';
 import getIcon from './icon';
 import geojson from '../vechtdal.geojson';
@@ -14,7 +15,7 @@ setTimeout(() => {
   L.geoJson(geojson, {
     onEachFeature: (feature, layer) => {
       // add popup
-      layer.bindPopup(popupData(feature));
+      layer.bindPopup(popupData(feature), {minWidth: 250, maxWidth: 380});
       // add marker
       if (feature.geometry && feature.geometry.type === 'Polygon') {
         const geom = L.polygon(feature.geometry.coordinates[0].map(a => L.latLng([a[1], a[0]])));
@@ -37,8 +38,16 @@ function popupData(feature) {
   items.push([`
     <h2 class="pre-title">${props.producer || 'Vechtdal Boer'}</h2>
     <h1>${props.name}</h1>
-    <p>${props.description}</p>
   `, false]);
-  props.info_url && items.push(['Lees meer <i class="glyphicon glyphicon-chevron-right"></i>', props.info_url])
-  return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? 'a href=`$i[1]`' : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';
+  props.image_urls && items.push([
+    `<img src="${props.image_urls[0]}">`
+  , false])
+  props.description && items.push([props.description, false]);
+  props.info_url && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', props.info_url])
+  return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? `a href='${i[1]}'` : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';
 }
+
+// easter egg
+$('#logo').on('click', () => {
+  alert('Hallo bezoeker!')
+})

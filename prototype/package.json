@@ -11,6 +11,7 @@
   "license": "GPL-3.0+",
   "dependencies": {
     "bootstrap": "^3.3.6",
+    "jquery": "^3.0.0",
     "leaflet": "^0.7.7",
     "lodash": "^4.13.1",
     "simple-css-loader": "^0.1.0"

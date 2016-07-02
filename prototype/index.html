@@ -29,6 +29,14 @@
       height: 120px;
       width: 120px;
     }
+    #note {
+      position: absolute;
+      bottom: 20px;
+      right: 10px;
+      font-size: 12.5px;
+      font-style: italic;
+      opacity: 0.8;
+    }
 
     /* slow zoom for initial animation */
     .leaflet-zoom-anim .leaflet-zoom-animated {
@@ -63,6 +71,7 @@
   </head>
   <body>
     <div id="app"></div>
+    <div id="note">Please note this is not real data!</div>
     <div id="logo"></div>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="bundle.js"></script>
