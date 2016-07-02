@@ -12,21 +12,47 @@ setTimeout(() => { map.setZoom(finalZoom, {animate: true}); }, 1000);
 setTimeout(() => {
   L.geoJson(geojson, {
     onEachFeature: (feature, layer) => {
+      // add popup
       layer.bindPopup(popupData(feature));
+      // add marker
+      if (feature.geometry && feature.geometry.type === 'Polygon') {
+        const geom = L.polygon(feature.geometry.coordinates[0].map(a => L.latLng([a[1], a[0]])));
+        const pos = geom.getBounds().getCenter();
+        const icon = getIcon(feature.properties.produce_id) || getIcon(feature.properties.crop_id);
+        icon && L.marker(pos, {icon: icon}).addTo(map);
+      };
     }
   }).addTo(map);
-}, 2000);
+}, 1800);
 
 L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
   attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(map);
 
+
+function makeIcon(icon) {
+  return L.icon({
+    iconUrl: icon,
+    iconSize: [56, 75],
+    iconAnchor: [27, 71],
+  });
+}
+
+var icons = {
+  pig: makeIcon(require('./assets/pig.png')),
+  kip: makeIcon(require('./assets/kip.png')),
+};
+function getIcon(id) {
+  return icons[id];
+}
+
+
 function popupData(feature) {
   const defaultProps = {
     Producer: 'Boer Piet',
     Description: 'Onze zwartbont koeien zijn blije biologische koeien en zo meer.',
-    Crop: 'gras',
-    Animal: 'cow',
+    crop_id: 'gras',
+    produce_id: 'cow',
     info_url: 'http://boerpiet.example.com/',
   };
   const props = {...defaultProps, ...feature.properties};
