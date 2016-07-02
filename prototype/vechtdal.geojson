@@ -4458,7 +4458,10 @@
                 "sowingDate": "2016-03-01",
                 "harvestDate (eerst mogelijke oogstdatum)": "juli",
                 "info_url": "http://overesch.nl/dieren/varkens/",
-                "image_urls": ["http://overesch.nl/wp-content/uploads/2015/10/header1-325x250.jpg"],
+                "image_urls": [
+                  "https://cdn.rawgit.com/FarmHackNL/hello-farmer/master/prototype/src/assets/photo-farmer-pig.png",
+                  "http://overesch.nl/wp-content/uploads/2015/10/header1-325x250.jpg"
+                ],
                 "posts": [
                   {
                     "text": "Uitleg gegeven aan schoolkinderen van de basisschool De Vlieger",

@@ -37,6 +37,20 @@
       font-style: italic;
       opacity: 0.8;
     }
+    #search {
+      position: absolute;
+      top: 20px;
+      left: 60px;
+      font-size: 30px;
+      opacity: 0.8;
+    }
+    #search:hover {
+      opacity: 1;
+    }
+    #search {
+      background-color: white;
+      border-radius: 100px;
+    }
 
     /* slow zoom for initial animation */
     .leaflet-zoom-anim .leaflet-zoom-animated {
@@ -71,6 +85,10 @@
   </head>
   <body>
     <div id="app"></div>
+    <div id="search">
+      <!-- Hallo boer, heb je <input type="text" > voor mij? -->
+      <img src="src/assets/hallo-input-placeholder.png" width="700" alt="Hallo Boer, heb je ook _________ voor mij?">
+    </div>
     <div id="note">Please note this is not real data!</div>
     <div id="logo"></div>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
