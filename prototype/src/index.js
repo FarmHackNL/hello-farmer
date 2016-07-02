@@ -1,4 +1,5 @@
 import L from 'leaflet';
+import getIcon from './icon';
 import geojson from '../vechtdal.geojson';
 
 const position    = [52.5166077, 6.1483097]; // Zwolle
@@ -30,37 +31,13 @@ L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
 }).addTo(map);
 
 
-function makeIcon(icon) {
-  return L.icon({
-    iconUrl: icon,
-    iconSize: [56, 75],
-    iconAnchor: [27, 71],
-  });
-}
-
-var icons = {
-  pig: makeIcon(require('./assets/pig.png')),
-  kip: makeIcon(require('./assets/kip.png')),
-};
-function getIcon(id) {
-  return icons[id];
-}
-
-
 function popupData(feature) {
-  const defaultProps = {
-    Producer: 'Boer Piet',
-    Description: 'Onze zwartbont koeien zijn blije biologische koeien en zo meer.',
-    crop_id: 'gras',
-    produce_id: 'cow',
-    info_url: 'http://boerpiet.example.com/',
-  };
-  const props = {...defaultProps, ...feature.properties};
+  const props = feature.properties;
   let items = [];
   items.push([`
-    <h2 class="pre-title">${props.Producer}</h2>
-    <h1>${props.Name}</h1>
-    <p>${props.Description}</p>
+    <h2 class="pre-title">${props.producer || 'Vechtdal Boer'}</h2>
+    <h1>${props.name}</h1>
+    <p>${props.description}</p>
   `, false]);
   props.info_url && items.push(['Lees meer <i class="glyphicon glyphicon-chevron-right"></i>', props.info_url])
   return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? 'a href=`$i[1]`' : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';

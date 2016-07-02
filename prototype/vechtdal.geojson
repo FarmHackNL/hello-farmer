@@ -11,8 +11,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -160,8 +160,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -219,8 +219,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "olifantsgras Jan Govert",
-                "Description": ""
+                "name": "olifantsgras Jan Govert",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -333,8 +333,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "plas-dras natuurstrook",
-                "Description": ""
+                "name": "plas-dras natuurstrook",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -537,8 +537,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "",
-                "Description": ""
+                "name": "",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -606,8 +606,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling?",
-                "Description": ""
+                "name": "grasland in omschakeling?",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -705,8 +705,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "zwartbont boer Harold",
-                "Description": ""
+                "name": "zwartbont boer Harold",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -804,8 +806,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1073,8 +1075,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1317,8 +1319,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1371,8 +1373,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1415,8 +1417,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "4 PK / remco sluiter"
+                "name": "grasland in omschakeling",
+                "description": "4 PK / remco sluiter"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1479,8 +1481,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "tuinbouw",
-                "Description": "4pk"
+                "name": "tuinbouw",
+                "description": "4pk"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1513,8 +1515,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "grasland in omschakeling",
-                "Description": "reserveren toekomstige teelten"
+                "name": "grasland in omschakeling",
+                "description": "reserveren toekomstige teelten"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1597,8 +1599,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "graanteelt",
-                "Description": ""
+                "name": "graanteelt",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -1646,8 +1648,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "vleesvee natuurboeren",
-                "Description": "veeteelt extensief"
+                "name": "vleesvee natuurboeren",
+                "description": "veeteelt extensief",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -1795,8 +1799,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "",
-                "Description": ""
+                "name": "",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -1834,8 +1838,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "zomertarwe boer Rick",
-                "Description": ""
+                "name": "zomertarwe boer Rick",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -1913,8 +1917,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "extensief bloemrijk gras",
-                "Description": ""
+                "name": "extensief bloemrijk gras",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -2437,8 +2441,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Fleckvieh boer Rob",
-                "Description": ""
+                "name": "Fleckvieh boer Rob",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2651,8 +2657,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Fleckvieh boer Rob",
-                "Description": ""
+                "name": "Fleckvieh boer Rob",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -2860,8 +2868,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "bloemrijke akkerkruiden",
-                "Description": ""
+                "name": "bloemrijke akkerkruiden",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -2999,8 +3007,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "bio begraasd grasl",
-                "Description": ""
+                "name": "bio begraasd grasl",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3213,8 +3223,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "",
-                "Description": ""
+                "name": "",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3252,8 +3262,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "zwartbont boer Harold",
-                "Description": ""
+                "name": "zwartbont boer Harold",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3301,47 +3313,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Polygoon 37",
-                "Description": ""
-            },
-            "geometry": {
-                "type": "Polygon",
-                "coordinates": [
-                    [
-                        [
-                            6.1492538,
-                            52.5214176,
-                            0
-                        ],
-                        [
-                            6.150434,
-                            52.5199683,
-                            0
-                        ],
-                        [
-                            6.1516678,
-                            52.5202686,
-                            0
-                        ],
-                        [
-                            6.1505199,
-                            52.5217047,
-                            0
-                        ],
-                        [
-                            6.1492538,
-                            52.5214176,
-                            0
-                        ]
-                    ]
-                ]
-            }
-        },
-        {
-            "type": "Feature",
-            "properties": {
-                "Name": "struinpad 2016",
-                "Description": ""
+                "name": "struinpad 2016",
+                "description": ""
             },
             "geometry": {
                 "type": "LineString",
@@ -3427,8 +3400,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Lijn 32",
-                "Description": ""
+                "name": "Lijn 32",
+                "description": ""
             },
             "geometry": {
                 "type": "LineString",
@@ -3489,8 +3462,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Lijn 33",
-                "Description": ""
+                "name": "Lijn 33",
+                "description": ""
             },
             "geometry": {
                 "type": "LineString",
@@ -3576,8 +3549,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "Lijn 35",
-                "Description": ""
+                "name": "Lijn 35",
+                "description": ""
             },
             "geometry": {
                 "type": "LineString",
@@ -3618,8 +3591,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "vruchtgewassen",
-                "Description": ""
+                "name": "vruchtgewassen",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3662,8 +3635,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "granen",
-                "Description": ""
+                "name": "granen",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3726,8 +3699,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "aardappels",
-                "Description": ""
+                "name": "aardappels",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3765,8 +3738,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "bladgewassen",
-                "Description": ""
+                "name": "bladgewassen",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3804,8 +3777,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "wortelgewassen",
-                "Description": ""
+                "name": "wortelgewassen",
+                "description": "",
+                "crop_id": "carrots",
+                "produce_id": "carrots"
             },
             "geometry": {
                 "type": "Polygon",
@@ -3853,8 +3828,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "vruchtgewassen",
-                "Description": ""
+                "name": "vruchtgewassen",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3897,8 +3872,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "prei/ui",
-                "Description": ""
+                "name": "prei/ui",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3936,8 +3911,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "tomaten",
-                "Description": ""
+                "name": "tomaten",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -3975,8 +3950,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "komkommers",
-                "Description": ""
+                "name": "komkommers",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4014,8 +3989,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "keukenkruiden",
-                "Description": ""
+                "name": "keukenkruiden",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4053,8 +4028,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "bloemen",
-                "Description": ""
+                "name": "bloemen",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4097,8 +4072,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "kruiden",
-                "Description": ""
+                "name": "kruiden",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4141,8 +4116,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "sperzieboon",
-                "Description": ""
+                "name": "sperzieboon",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4180,8 +4155,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "biet",
-                "Description": ""
+                "name": "biet",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4219,8 +4194,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "groenbemester",
-                "Description": ""
+                "name": "groenbemester",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4258,8 +4233,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "boerenkool",
-                "Description": ""
+                "name": "boerenkool",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4298,8 +4273,8 @@
             "type": "Feature",
             "properties": {
                 "producer": "Jan Overesch",
-                "crop": "pompoen",
-                "Produce": "Pompoenen",
+                "name": "pompoen",
+                "crop_id": "pompoen",
                 "sowingDate": "2016-05-27",
                 "harvestDate (eerst mogelijke oogstdatum)": "augustus/september",
                 "description": "De pompoenen worden in mei gezaaid en in augustus/september geoogst. We wassen alle pompoenen en sorteren ze dan op grootte. Je kunt de pompoenen in alle soorten en maten bij ons aan in de winkel kopen",
@@ -4354,8 +4329,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "rode kool",
-                "Description": ""
+                "name": "rode kool",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4393,8 +4368,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "bospeen",
-                "Description": ""
+                "name": "bospeen",
+                "description": "",
+                "crop_id": "carrots"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4432,8 +4408,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "prei",
-                "Description": ""
+                "name": "prei",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4477,7 +4453,7 @@
                 "produce_id": "pig",
                 "description": "Hier groeien onze schgarrelende biggen tot een vleesvarken.",
                 "sowingDate": "2016-03-01",
-                "harvestDate (eerst mogelijke oogstdatum)": "juli",                
+                "harvestDate (eerst mogelijke oogstdatum)": "juli",
                 "info_url": "http://overesch.nl/dieren/varkens/",
                 "image_urls": "http://overesch.nl/wp-content/uploads/2015/10/header1-325x250.jpg",
                 "posts": [
@@ -4491,9 +4467,9 @@
                     "date": "2016-07-02",
                     "url": "http://www.slagerijvansoest.nl/Afbeeldingen/varkens.jpg"
                   }
-                ] 
+                ]
             },
-            
+
             "geometry": {
                 "type": "Polygon",
                 "coordinates": [
@@ -4575,8 +4551,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "tomaten",
-                "Description": ""
+                "name": "tomaten",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4614,8 +4590,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "komkommer",
-                "Description": ""
+                "name": "komkommer",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
@@ -4653,8 +4629,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "leghennen",
-                "Description": ""
+                "name": "leghennen",
+                "description": "",
+                "produce_id": "kip"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4692,8 +4669,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "boomgaard & kippen",
-                "Description": ""
+                "name": "boomgaard & kippen",
+                "description": "",
+                "produce_id": "kip"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4756,8 +4734,9 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "scharrelvarkens",
-                "Description": ""
+                "name": "scharrelvarkens",
+                "description": "",
+                "produce_id": "pig"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4815,8 +4794,10 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "zwartbont boer Harold",
-                "Description": ""
+                "name": "zwartbont boer Harold",
+                "description": "",
+                "crop_id": "grass",
+                "produce_id": "cow"
             },
             "geometry": {
                 "type": "Polygon",
@@ -4944,8 +4925,8 @@
         {
             "type": "Feature",
             "properties": {
-                "Name": "tuinbouw boer Maaike",
-                "Description": ""
+                "name": "tuinbouw boer Maaike",
+                "description": ""
             },
             "geometry": {
                 "type": "Polygon",
