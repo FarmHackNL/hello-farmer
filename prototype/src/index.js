@@ -39,10 +39,21 @@ function popupData(feature) {
     <h2 class="pre-title">${props.producer || 'Vechtdal Boer'}</h2>
     <h1>${props.name}</h1>
   `, false]);
-  props.image_urls && items.push([
-    `<div class="text-center"><img src="${props.image_urls[0]}"></div>`
-  , false])
+  if (props.vr_url) {
+    items.push([
+      `<iframe width="100%" height="300px" allowfullscreen frameborder="0" src="//storage.googleapis.com/vrview/index.html?image=${props.vr_url}&is_stereo=true"></iframe>`
+    , false]);
+  } else if (props.image_urls) {
+    items.push([
+      `<div class="text-center"><img src="${props.image_urls[0]}"></div>`
+    , false])
+  }
   props.description && items.push([props.description, false]);
+  if (props.sowingDate) {
+    items.push([
+      `<em>Gezaaid</em> ${props.sowingDate}` + (props.harvestDate ? `, <em>oogst</em> ${props.harvestDate}` : '')
+    , false]);
+  }
   props.info_url && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', props.info_url])
   return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? `a href='${i[1]}'` : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';
 }
