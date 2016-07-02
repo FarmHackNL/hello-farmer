@@ -41,7 +41,7 @@ function popupData(feature) {
   `, false]);
   if (props.vr_url) {
     items.push([
-      `<iframe width="100%" height="300px" allowfullscreen frameborder="0" src="//storage.googleapis.com/vrview/index.html?image=${props.vr_url}&is_stereo=true"></iframe>`
+      `<iframe width="100%" height="300px" allowfullscreen frameborder="0" src="//storage.googleapis.com/vrview/index.html?image=${encodeURIComponent(props.vr_url)}&is_stereo=true"></iframe>`
     , false]);
   } else if (props.image_urls) {
     items.push([
