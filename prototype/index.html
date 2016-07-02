@@ -15,16 +15,55 @@
       padding: 0;
     }
     #app {
-      display: absolute;
       top: 0;
       left: 0;
       width: 100%;
       height: 100%;
     }
+    #logo {
+      position: absolute;
+      top: 20px;
+      right: 20px;
+      background-image: url(src/assets/logo.png);
+      background-size: 120px;
+      height: 120px;
+      width: 120px;
+    }
+
+    /* slow zoom for initial animation */
+    .leaflet-zoom-anim .leaflet-zoom-animated {
+    	-webkit-transition: -webkit-transform 5s cubic-bezier(0,0,0.25,1);
+    	   -moz-transition:    -moz-transform 5s cubic-bezier(0,0,0.25,1);
+    	     -o-transition:      -o-transform 5s cubic-bezier(0,0,0.25,1);
+    	        transition:         transform 5s cubic-bezier(0,0,0.25,1);
+    	}
+
+    .leaflet-popup-content {
+      margin: 3px;
+    }
+    .leaflet-popup-content p {
+      margin: 0;
+    }
+    .map-popup {
+      margin: 0;
+      padding: 0;
+      font-size: 16px;
+    }
+    .map-popup .pre-title {
+      font-size: 20px;
+      font-style: italic;
+      margin-top: 5px;
+      margin-bottom: 0;
+    }
+    .map-popup h1 {
+      margin-top: 0;
+      font-size: 26px;
+    }
   </style>
   </head>
   <body>
     <div id="app"></div>
+    <div id="logo"></div>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="bundle.js"></script>
   </body>

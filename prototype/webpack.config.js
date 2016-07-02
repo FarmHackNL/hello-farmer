@@ -3,7 +3,7 @@ var pkg = require('./package.json');
 var config = require('./src/config');
 
 module.exports = {
-  entry: './src/index.jsx',
+  entry: './src/index.js',
   module: {
     loaders: [
       {
