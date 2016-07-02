@@ -705,7 +705,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "zwartbont boer Harold",
+                "producer": "Boer Harold",
+                "name": "zwartbont",
                 "description": "",
                 "crop_id": "grass",
                 "produce_id": "cow"
@@ -1839,7 +1840,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "zomertarwe boer Rick",
+                "producer": "Boer Rick",
+                "name": "zomertarwe",
                 "description": "",
                 "crop_id": "graan"
             },
@@ -2443,7 +2445,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Fleckvieh boer Rob",
+                "producer": "Boer Rob",
+                "name": "Fleckvieh",
                 "description": "",
                 "crop_id": "grass",
                 "produce_id": "cow"
@@ -2659,7 +2662,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "Fleckvieh boer Rob",
+                "producer": "Boer Rob",
+                "name": "Fleckvieh",
                 "description": "",
                 "crop_id": "grass",
                 "produce_id": "cow"
@@ -3264,7 +3268,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "zwartbont boer Harold",
+                "producer": "Boer Harold",
+                "name": "zwartbont",
                 "description": "",
                 "crop_id": "grass",
                 "produce_id": "cow"
@@ -4799,7 +4804,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "zwartbont boer Harold",
+                "producer": "Boer Harold",
+                "name": "zwartbont",
                 "description": "",
                 "crop_id": "grass",
                 "produce_id": "cow"
@@ -4930,7 +4936,8 @@
         {
             "type": "Feature",
             "properties": {
-                "name": "tuinbouw boer Maaike",
+                "producer": "Boer Maaike",
+                "name": "tuinbouw",
                 "description": ""
             },
             "geometry": {
