@@ -14,14 +14,16 @@ setTimeout(() => { map.setZoom(finalZoom, {animate: true}); }, 1000);
 setTimeout(() => {
   L.geoJson(geojson, {
     onEachFeature: (feature, layer) => {
+      const _popupData = popupData(feature);
+      const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
       // add popup
-      layer.bindPopup(popupData(feature), {minWidth: 250, maxWidth: 380});
+      bindPopup(layer);
       // add marker
       if (feature.geometry && feature.geometry.type === 'Polygon') {
         const geom = L.polygon(feature.geometry.coordinates[0].map(a => L.latLng([a[1], a[0]])));
         const pos = geom.getBounds().getCenter();
         const icon = getIcon(feature.properties.produce_id) || getIcon(feature.properties.crop_id);
-        icon && L.marker(pos, {icon: icon}).addTo(map);
+        icon && bindPopup(L.marker(pos, {icon: icon})).addTo(map);
       };
     }
   }).addTo(map);
@@ -61,4 +63,8 @@ function popupData(feature) {
 // easter egg
 $('#logo').on('click', () => {
   alert('Hallo bezoeker!')
-})
+});
+
+$('#search').on('click', () => {
+  alert('Sorry, je kunt nog niet zoeken.');
+});
