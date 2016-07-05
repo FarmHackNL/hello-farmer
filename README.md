@@ -1,3 +1,21 @@
+# Hallo Boer!
+
+_Een concept om consumenten en lokale producenten op een leuke manier te verbinden._
+
+(todo: korte omschrijving + link naar presentatie)
+
+&gt;&gt; **[Prototype](https://farmhacknl.github.io/hello-farmer/)** &lt;&lt;
+
+Vind je dit interessant om aan mee te werken of toe te passen? [Neem contact met ons op](mailto:org-farmhack@willem.engen.nl)!
+
+---
+
+## ontstaan
+
+Op [FarmHack](http://farmhack.nl/) ["Van boer naar stad"](http://www.farmhack.nl/challenge/van-boer-naar-stad/) (1-2 juli 2016)
+(zie ook dit [blog artikel](http://www.farmhack.nl/data-farmhack-korte-ketens/))
+is dit idee ontstaan en uitgewerkt tot presentatie en prototype. Daarmee werd het
+[winnaar](https://twitter.com/FarmHackNL/status/749256271887536128) uit drie.
 
 
 ## ideeën
@@ -40,7 +58,7 @@ hallo boer
   4. initiële implementatie
 
 
-# Data
+# data
 
 We spraken met een boer. Hij houdt teeltplannen bij in een spreadsheet. Iedere week geeft hij aan de groothandel (Udea) door wat hij kan leveren, die gaan zorgen dat het ergens terecht komt. Gaat allemaal met de mail, geen gestructureerd datasysteem (wel voor droogwaren, niet voor vers). Voor nieuwe producten geeft hij het twee weken vantevoren door, andere schijnbaar wekelijks.
 
