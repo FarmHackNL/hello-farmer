@@ -1,17 +1,16 @@
 import $ from 'jquery';
 import L from 'leaflet';
+import loadanim from './loadanim';
 import getIcon from './icon';
 import geojson from '../vechtdal.geojson';
 
-const position    = [52.5166077, 6.1483097]; // Zwolle
-const initialZoom = 12;
-const finalZoom   = 16;
+const startPosition = [52.5124179,6.0922516, 13];  // Zwolle centrum
+const endPosition   = [52.5166077, 6.1483097, 16]; // Stadslanderijen
 
-const map = L.map('app').setView(position, initialZoom);
+const map = L.map('app').setView([startPosition[0], startPosition[1]], startPosition[2]);
 
-setTimeout(() => { map.setZoom(finalZoom, {animate: true}); }, 1000);
-// load geojson after zooming + animation (css-based), doesn't scale too well :(
-setTimeout(() => {
+const layers = [
+  // land boundaries
   L.geoJson(geojson, {
     onEachFeature: (feature, layer) => {
       const _popupData = popupData(feature);
@@ -26,13 +25,15 @@ setTimeout(() => {
         icon && bindPopup(L.marker(pos, {icon: icon})).addTo(map);
       };
     }
-  }).addTo(map);
-}, 1800);
+  }),
+  // OSM tiles
+  L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
+  }),
+];
+layers.map((layer) => layer.addTo(map));
 
-L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {
-  attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
-}).addTo(map);
-
+loadanim(map, endPosition, layers);
 
 function popupData(feature) {
   const props = feature.properties;

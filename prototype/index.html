@@ -63,14 +63,32 @@
       color: #444;
       width: 9em;
     }
-
-    /* slow zoom for initial animation */
-    .leaflet-zoom-anim .leaflet-zoom-animated {
-    	-webkit-transition: -webkit-transform 3s cubic-bezier(0,0,0.25,1);
-    	   -moz-transition:    -moz-transform 3s cubic-bezier(0,0,0.25,1);
-    	     -o-transition:      -o-transform 3s cubic-bezier(0,0,0.25,1);
-    	        transition:         transform 3s cubic-bezier(0,0,0.25,1);
-    	}
+    /* http://stackoverflow.com/a/19461564/2866660 */
+    #intro-container {
+      left: 0;
+      top: 50%;
+      position: absolute;
+      height: 100;
+      width: 100%;
+      pointer-events: none;
+      display: none; /* not yet */
+    }
+    #intro {
+      position: relative;
+      text-align: center;
+      font-family: 'Rajdhani', sans-serif;
+      font-weight: 700;
+      color: white;
+      text-shadow: 2px 2px black;
+    }
+    #intro > div {
+      position: absolute;
+      margin-top: -100px;
+      font-size: 200px;
+      top: 0;
+      left: 0;
+      right: 0;
+    }
 
     .leaflet-popup-content {
       margin: 3px;
@@ -100,6 +118,7 @@
     <div id="search">Hallo boer, heb je ook <input type="text">?</div>
     <div id="note">Please note this is not real data!</div>
     <div id="logo"></div>
+    <div id="intro-container"><div id="intro"><div>Zwolle</div></div></div>
     <script src="node_modules/leaflet/dist/leaflet.js"></script>
     <script src="bundle.js"></script>
   </body>
