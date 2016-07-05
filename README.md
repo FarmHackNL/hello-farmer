@@ -1,5 +1,7 @@
 # Hallo Boer!
 
+[![Join the chat at https://gitter.im/FarmHackNL/hello-farmer](https://badges.gitter.im/FarmHackNL/hello-farmer.svg)](https://gitter.im/FarmHackNL/hello-farmer?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 _Een concept om consumenten en lokale producenten op een leuke manier te verbinden._
 
 (todo: korte omschrijving + link naar presentatie)
