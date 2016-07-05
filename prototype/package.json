@@ -5,6 +5,7 @@
   "scripts": {
     "start": "NODE_ENV=development webpack-dev-server -w -d",
     "build": "NODE_ENV=production webpack -p --optimize-occurence-order --optimize-dedupe && mkdir -p build/css && cp node_modules/bootstrap/dist/css/bootstrap.min.css node_modules/leaflet/dist/leaflet.js node_modules/leaflet/dist/leaflet.css build/css/ && cp src/assets/* build/ && cp -R node_modules/bootstrap/dist/fonts build/ && sed 's/node_modules[^\"]*\\/\\([^\"]*\\)\"/css\\/\\1\"/;s/src\\/assets\\///' index.html > build/index.html",
+    "deploy": "npm run build && ./deploy.sh",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "wvengen <dev-voko@willem.engen.nl>",

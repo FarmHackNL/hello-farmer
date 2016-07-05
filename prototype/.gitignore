@@ -1,3 +1,4 @@
 node_modules/
-build/*
+/build/*
+/build.git
 npm-debug.log

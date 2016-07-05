@@ -27,6 +27,7 @@ $ npm run build
 ```
 
 Then the folder `build/` contains a ready-to-deploy website.
+For updating the Github Pages website, run `npm run deploy` instead.
 
 
 ## License
