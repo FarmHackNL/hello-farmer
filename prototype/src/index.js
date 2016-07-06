@@ -31,9 +31,9 @@ const layers = [
     attribution: '&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
   }),
 ];
-layers.map((layer) => layer.addTo(map));
 
 loadanim(map, endPosition, layers);
+layers.map((layer) => layer.addTo(map));
 
 function popupData(feature) {
   const props = feature.properties;
