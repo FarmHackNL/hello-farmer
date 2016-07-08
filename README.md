@@ -4,8 +4,8 @@
 
 _Een concept om consumenten en lokale producenten op een leuke manier te verbinden._
 
-(todo: korte omschrijving + link naar presentatie)
-
+&gt;&gt; **[Presentatie](pitch-20160702.pdf)** ([pdf](https://github.com/FarmHackNL/hello-farmer/raw/master/pitch-20160702.pdf)) &lt;&lt;
+|
 &gt;&gt; **[Prototype](https://farmhacknl.github.io/hello-farmer/)** &lt;&lt;
 
 Vind je dit interessant om aan mee te werken of toe te passen? [Neem contact met ons op](mailto:org-farmhack@willem.engen.nl)!
