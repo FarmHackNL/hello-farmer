@@ -15,7 +15,7 @@ Vind je dit interessant om aan mee te werken of toe te passen? [Neem contact met
 ## ontstaan
 
 Op [FarmHack](http://farmhack.nl/) ["Van boer naar stad"](http://www.farmhack.nl/challenge/van-boer-naar-stad/) (1-2 juli 2016)
-(zie ook dit [blog artikel](http://www.farmhack.nl/data-farmhack-korte-ketens/))
+(zie ook de [resultaten](http://www.farmhack.nl/resultaten-farmhack-3/) en [intro](http://www.farmhack.nl/data-farmhack-korte-ketens/) blog artikelen)
 is dit idee ontstaan en uitgewerkt tot presentatie en prototype. Daarmee werd het
 [winnaar](https://twitter.com/FarmHackNL/status/749256271887536128) uit drie.
 
