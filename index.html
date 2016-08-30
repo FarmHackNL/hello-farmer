@@ -111,6 +111,9 @@
       margin-top: 0;
       font-size: 26px;
     }
+    .leaflet-container .map-popup img {
+      max-width: 100% !important; /* sigh, leaflet overrides this */
+    }
   </style>
   </head>
   <body>
@@ -118,7 +121,7 @@
     <div id="search">Hallo boer, heb je ook <input type="text">?</div>
     <div id="note">Please note this is not real data!</div>
     <div id="logo"></div>
-    <div id="intro-container"><div id="intro"><div>Zwolle</div></div></div>
+    <div id="intro-container"><div id="intro"><div id="intro-text">...</div></div></div>
     <script src="css/leaflet.js"></script>
     <script src="bundle.js"></script>
   </body>
