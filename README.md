@@ -6,7 +6,7 @@ _Een concept om consumenten en lokale producenten op een leuke manier te verbind
 
 &gt;&gt; **[Presentatie](pitch-20160702.pdf)** ([pdf](https://github.com/FarmHackNL/hello-farmer/raw/master/pitch-20160702.pdf)) &lt;&lt;
 |
-&gt;&gt; **[Prototype](https://farmhacknl.github.io/hello-farmer/)** &lt;&lt;
+&gt;&gt; **[Prototype](https://farmhacknl.github.io/hello-farmer/)** ([Zwolle](https://farmhacknl.github.io/hello-farmer/#zwolle), [Vechtdal](https://farmhacknl.github.io/hello-farmer/#vechtdal))&lt;&lt;
 
 Vind je dit interessant om aan mee te werken of toe te passen? [Neem contact met ons op](mailto:org-farmhack@willem.engen.nl)!
 

@@ -2,16 +2,18 @@ import $ from 'jquery';
 import L from 'leaflet';
 import loadanim from './loadanim';
 import getIcon from './icon';
-import geojson from '../vechtdal.geojson';
+import regions from './regions';
 
-const startPosition = [52.5124179,6.0922516, 13];  // Zwolle centrum
-const endPosition   = [52.5166077, 6.1483097, 16]; // Stadslanderijen
+// allow to select region by hashtag
+const regionId = location.hash.substr(1); // strip first '#' character
+const region = regions[regionId] || regions.zwolle;
 
-const map = L.map('app').setView([startPosition[0], startPosition[1]], startPosition[2]);
+const map = L.map('app').setView([region.loadPosition[0], region.loadPosition[1]], region.loadPosition[2]);
+$('#intro-text').text(region.loadTitle);
 
 const layers = [
   // land boundaries
-  L.geoJson(geojson, {
+  L.geoJson(region.geojson, {
     onEachFeature: (feature, layer) => {
       const _popupData = popupData(feature);
       const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
@@ -32,15 +34,15 @@ const layers = [
   }),
 ];
 
-loadanim(map, endPosition, layers);
+loadanim(map, region.position, layers);
 layers.map((layer) => layer.addTo(map));
 
 function popupData(feature) {
   const props = feature.properties;
   let items = [];
   items.push([`
-    <h2 class="pre-title">${props.producer || 'Vechtdal Boer'}</h2>
-    <h1>${props.name}</h1>
+    <h2 class="pre-title">${props.producer || region.producerPlaceholder}</h2>
+    <h1>${props.name || props.crop_name}</h1>
   `, false]);
   if (props.vr_url) {
     items.push([

@@ -19,6 +19,8 @@ $ npm start
 
 and open [http://localhost:8080/](http://localhost:8080/)
 
+At the moment you can add a region id as hash.
+
 
 ## Release
 
