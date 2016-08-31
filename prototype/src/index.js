@@ -12,10 +12,25 @@ const map = L.map('app').setView([region.loadPosition[0], region.loadPosition[1]
 $('#intro-text').text(region.loadTitle);
 
 const layers = [
-  // land boundaries
-  L.geoJson(region.geojson, {
+  // places
+  L.geoJson(region.geojson.places, {
     onEachFeature: (feature, layer) => {
-      const _popupData = popupData(feature);
+      const _popupData = placePopupData(feature);
+      const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
+      // add popup
+      bindPopup(layer);
+      // add marker
+      if (feature.geometry && feature.geometry.type === 'Point') {
+        const pos = feature.geometry.coordinates;
+        const icon = getIcon(feature.properties.type) || getIcon(feature.properties.crop_id);
+        icon && bindPopup(L.marker(pos, {icon: icon})).addTo(map);
+      };
+    }
+  }),
+  // land boundaries
+  L.geoJson(region.geojson.lands, {
+    onEachFeature: (feature, layer) => {
+      const _popupData = landPopupData(feature);
       const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
       // add popup
       bindPopup(layer);
@@ -37,7 +52,7 @@ const layers = [
 loadanim(map, region.position, layers);
 layers.map((layer) => layer.addTo(map));
 
-function popupData(feature) {
+function landPopupData(feature) {
   const props = feature.properties;
   let items = [];
   items.push([`
@@ -52,6 +67,10 @@ function popupData(feature) {
     items.push([
       `<div class="text-center"><img src="${props.image_urls[0]}"></div>`
     , false])
+  } else if (props.image_url) {
+    items.push([
+      `<div class="text-center"><img src="${props.image_url}"></div>`
+    , false]);
   }
   props.description && items.push([props.description, false]);
   if (props.sowingDate) {
@@ -61,6 +80,10 @@ function popupData(feature) {
   }
   props.info_url && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', props.info_url])
   return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? `a href='${i[1]}'` : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';
+}
+
+function placePopupData(feature) {
+  return landPopupData(feature);
 }
 
 // easter egg
