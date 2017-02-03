@@ -1,4 +1,5 @@
 import $ from 'jquery';
+import {uniq} from 'lodash';
 import {getImage} from './icon';
 
 function open() {
@@ -11,18 +12,25 @@ function close() {
 
 function search(region, term) {
   let results = find(region.geojson.lands.features, term);
+  let html = null;
+
   if (results.length > 0) {
-    $('#result').html(results.map(f => {
+    html = uniq(results.map(f => {
       let name = f.properties.name || f.properties.crop_name;
       let icon = f.properties.produce_id || f.properties.crop_id || f.properties.type;
       let producer = f.properties.producer || '&nbsp;';
       let img = `<img src="${getImage(icon)}" width="150" alt="${icon}">`;
-      let url = `#${region.id}/products/${f.properties.id}`;
+      let url = `#${region.id}/${producer}/${name}`;
+      if (!icon) return; // show only with icon
       return `<a href="${url}" class="btn btn-default result-item">${img}<div>${name}</div><div><b>${producer}</b></div></a>`;
     }));
-  } else {
-    $('#result').html('<p><i>Geen gewassen gevonden.</i></p>');
   }
+
+  if (!html) {
+    html = '<p><i>Geen gewassen gevonden.</i></p>';
+  }
+
+  $('#result').html(html);
 }
 
 function find(features, term) {
