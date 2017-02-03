@@ -94,7 +94,8 @@ $('#logo').on('click', function() {
 });
 
 // searching
-$('#search input').on('keyup change', debounce(function() {
+$('#search input').on('keyup change', debounce(function(e) {
+  if (e.keyCode == 27) $(this).val(''); // esc clears
   let val = $(this).val();
   if (val.trim() != '') {
     search.open();
