@@ -2,7 +2,7 @@ import $ from 'jquery';
 import L from 'leaflet';
 import {debounce} from 'lodash';
 import loadanim from './loadanim';
-import getIcon from './icon';
+import {getIcon} from './icon';
 import regions from './regions';
 import search from './search';
 
@@ -98,7 +98,7 @@ $('#search input').on('keyup change', debounce(function() {
   let val = $(this).val();
   if (val.trim() != '') {
     search.open();
-    search.search(val);
+    search.search(region, val);
   } else {
     search.close();
   }

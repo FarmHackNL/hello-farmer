@@ -11,6 +11,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 1,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -160,6 +161,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 2,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -219,6 +221,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 3,
                 "name": "olifantsgras Jan Govert",
                 "description": ""
             },
@@ -333,6 +336,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 3,
                 "name": "plas-dras natuurstrook",
                 "description": ""
             },
@@ -537,6 +541,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 4,
                 "name": "",
                 "description": ""
             },
@@ -606,6 +611,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 5,
                 "name": "grasland in omschakeling?",
                 "description": ""
             },
@@ -705,6 +711,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 6,
                 "producer": "Boer Harold",
                 "name": "zwartbont",
                 "description": "",
@@ -807,6 +814,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 7,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -1076,6 +1084,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 8,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -1320,6 +1329,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 9,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -1374,6 +1384,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 10,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -1418,6 +1429,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 11,
                 "name": "grasland in omschakeling",
                 "description": "4 PK / remco sluiter"
             },
@@ -1482,6 +1494,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 12,
                 "name": "tuinbouw",
                 "description": "4pk"
             },
@@ -1516,6 +1529,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 13,
                 "name": "grasland in omschakeling",
                 "description": "reserveren toekomstige teelten"
             },
@@ -1600,6 +1614,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 14,
                 "name": "graanteelt",
                 "description": "",
                 "crop_id": "graan"
@@ -1650,6 +1665,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 15,
                 "name": "vleesvee natuurboeren",
                 "description": "veeteelt extensief",
                 "crop_id": "grass",
@@ -1801,6 +1817,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 16,
                 "name": "",
                 "description": ""
             },
@@ -1840,6 +1857,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 17,
                 "producer": "Boer Rick",
                 "name": "zomertarwe",
                 "description": "",
@@ -1921,6 +1939,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 18,
                 "name": "extensief bloemrijk gras",
                 "description": ""
             },
@@ -2445,6 +2464,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 19,
                 "producer": "Boer Rob",
                 "name": "Fleckvieh",
                 "description": "",
@@ -2662,6 +2682,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 20,
                 "producer": "Boer Rob",
                 "name": "Fleckvieh",
                 "description": "",
@@ -2874,6 +2895,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 21,
                 "name": "bloemrijke akkerkruiden",
                 "description": ""
             },
@@ -3013,6 +3035,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 22,
                 "name": "bio begraasd grasl",
                 "description": "",
                 "crop_id": "grass",
@@ -3229,6 +3252,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 23,
                 "name": "",
                 "description": ""
             },
@@ -3268,6 +3292,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 24,
                 "producer": "Boer Harold",
                 "name": "zwartbont",
                 "description": "",
@@ -3320,6 +3345,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 25,
                 "name": "struinpad 2016",
                 "description": ""
             },
@@ -3407,6 +3433,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 26,
                 "name": "Lijn 32",
                 "description": ""
             },
@@ -3469,6 +3496,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 27,
                 "name": "Lijn 33",
                 "description": ""
             },
@@ -3556,6 +3584,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 28,
                 "name": "Lijn 35",
                 "description": ""
             },
@@ -3598,6 +3627,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 28,
                 "name": "vruchtgewassen",
                 "description": ""
             },
@@ -3642,6 +3672,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 29,
                 "name": "granen",
                 "description": "",
                 "crop_id": "graan"
@@ -3707,6 +3738,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 30,
                 "name": "aardappels",
                 "description": ""
             },
@@ -3746,6 +3778,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 31,
                 "name": "bladgewassen",
                 "description": ""
             },
@@ -3785,6 +3818,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 32,
                 "name": "wortelgewassen",
                 "description": "",
                 "crop_id": "carrots",
@@ -3836,6 +3870,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 33,
                 "name": "vruchtgewassen",
                 "description": ""
             },
@@ -3880,6 +3915,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 34,
                 "name": "prei/ui",
                 "description": ""
             },
@@ -3919,6 +3955,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 34,
                 "name": "tomaten",
                 "description": ""
             },
@@ -3958,6 +3995,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 35,
                 "name": "komkommers",
                 "description": ""
             },
@@ -3997,6 +4035,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 36,
                 "name": "keukenkruiden",
                 "description": ""
             },
@@ -4036,6 +4075,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 37,
                 "name": "bloemen",
                 "description": ""
             },
@@ -4080,6 +4120,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 38,
                 "name": "kruiden",
                 "description": ""
             },
@@ -4124,6 +4165,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 39,
                 "name": "sperzieboon",
                 "description": ""
             },
@@ -4163,6 +4205,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 40,
                 "name": "biet",
                 "description": ""
             },
@@ -4202,6 +4245,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 41,
                 "name": "groenbemester",
                 "description": ""
             },
@@ -4241,6 +4285,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 42,
                 "name": "boerenkool",
                 "description": ""
             },
@@ -4280,6 +4325,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 43,
                 "producer": "Jan Overesch",
                 "name": "pompoen",
                 "crop_id": "pompoen",
@@ -4337,6 +4383,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 44,
                 "name": "rode kool",
                 "description": ""
             },
@@ -4376,6 +4423,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 45,
                 "name": "bospeen",
                 "description": "",
                 "crop_id": "carrots"
@@ -4416,6 +4464,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 46,
                 "name": "prei",
                 "description": ""
             },
@@ -4455,6 +4504,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 47,
                 "name": "bosvarkens en kippen",
                 "producer": "Jan Overesch",
                 "crop_id": "bos",
@@ -4561,6 +4611,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 48,
                 "name": "tomaten",
                 "description": ""
             },
@@ -4600,6 +4651,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 49,
                 "name": "komkommer",
                 "description": ""
             },
@@ -4639,6 +4691,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 50,
                 "name": "leghennen",
                 "description": "",
                 "produce_id": "kip"
@@ -4679,6 +4732,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 51,
                 "name": "boomgaard & kippen",
                 "description": "",
                 "produce_id": "kip"
@@ -4744,6 +4798,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 52,
                 "name": "scharrelvarkens",
                 "description": "",
                 "produce_id": "pig"
@@ -4804,6 +4859,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 53,
                 "producer": "Boer Harold",
                 "name": "zwartbont",
                 "description": "",
@@ -4936,6 +4992,7 @@
         {
             "type": "Feature",
             "properties": {
+                "id": 54,
                 "producer": "Boer Maaike",
                 "name": "tuinbouw",
                 "description": ""

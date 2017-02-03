@@ -1,3 +1,5 @@
+import {mapValues} from 'lodash';
+
 function makeIcon(icon) {
   return L.icon({
     iconUrl: icon,
@@ -6,15 +8,21 @@ function makeIcon(icon) {
   });
 }
 
-var icons = {
-  cow: makeIcon(require('./assets/cow.png')),
-  pig: makeIcon(require('./assets/pig.png')),
-  kip: makeIcon(require('./assets/kip.png')),
-  graan: makeIcon(require('./assets/graan.png')),
-  carrots: makeIcon(require('./assets/carrots.png')),
-  pompoen: makeIcon(require('./assets/pompoen.png')),
-  brocolli: makeIcon(require('./assets/brocolli.png')),
+var images = {
+  cow: require('./assets/cow.png'),
+  pig: require('./assets/pig.png'),
+  kip: require('./assets/kip.png'),
+  graan: require('./assets/graan.png'),
+  carrots: require('./assets/carrots.png'),
+  pompoen: require('./assets/pompoen.png'),
+  brocolli: require('./assets/brocolli.png'),
 };
-export default function getIcon(id) {
+
+var icons = mapValues(images, makeIcon);
+
+export function getIcon(id) {
   return icons[id];
+}
+export function getImage(id) {
+  return images[id];
 }
