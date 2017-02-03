@@ -1,8 +1,10 @@
 import $ from 'jquery';
 import L from 'leaflet';
+import {debounce} from 'lodash';
 import loadanim from './loadanim';
 import getIcon from './icon';
 import regions from './regions';
+import search from './search';
 
 // allow to select region by hashtag
 const regionId = location.hash.substr(1); // strip first '#' character
@@ -87,10 +89,17 @@ function placePopupData(feature) {
 }
 
 // easter egg
-$('#logo').on('click', () => {
+$('#logo').on('click', function() {
   alert('Hallo bezoeker!')
 });
 
-$('#search').on('click', () => {
-  alert('Sorry, je kunt nog niet zoeken.');
-});
+// searching
+$('#search input').on('keyup change', debounce(function() {
+  let val = $(this).val();
+  if (val.trim() != '') {
+    search.open();
+    search.search(val);
+  } else {
+    search.close();
+  }
+}, 100));
