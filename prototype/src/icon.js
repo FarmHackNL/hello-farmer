@@ -9,6 +9,16 @@ function makeIcon(icon) {
 }
 
 var images = {
+  // places
+  farm: require('./assets/place-farm.png'),
+  shop: require('./assets/place-shop.png'),
+  bakery: require('./assets/place-shop.png'),
+  brewery: require('./assets/place-shop.png'),
+  hotel: require('./assets/place-shop.png'),
+  restaurant: require('./assets/place-shop.png'),
+  'place-default': require('./assets/place-default.png'),
+
+  // produce
   cow: require('./assets/cow.png'),
   pig: require('./assets/pig.png'),
   kip: require('./assets/kip.png'),
@@ -16,6 +26,8 @@ var images = {
   carrots: require('./assets/carrots.png'),
   pompoen: require('./assets/pompoen.png'),
   brocolli: require('./assets/brocolli.png'),
+
+  // products
 };
 
 var icons = mapValues(images, makeIcon);

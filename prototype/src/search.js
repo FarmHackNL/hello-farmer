@@ -11,18 +11,17 @@ function close() {
 }
 
 function search(region, term) {
-  let results = find(region.geojson.lands.features, term);
+  let results = find(region.data.products, term).concat(find(region.data.places, term));
   let html = null;
 
   if (results.length > 0) {
     html = uniq(results.map(f => {
-      let name = f.properties.name || f.properties.crop_name;
-      let icon = f.properties.produce_id || f.properties.crop_id || f.properties.type;
-      let producer = f.properties.producer || '&nbsp;';
+      let name = f.name;
+      let icon = f.produce_id || f.crop_id || f.type;
+      let producer = f.producer || '&nbsp;';
       let img = `<img src="${getImage(icon)}" width="150" alt="${icon}">`;
-      let url = `#${region.id}/${producer}/${name}`;
       if (!icon) return; // show only with icon
-      return `<a href="${url}" class="btn btn-default result-item">${img}<div>${name}</div><div><b>${producer}</b></div></a>`;
+      return `<a href="#" class="btn btn-default result-item">${img}<div>${name}</div><div><b>${producer}</b></div></a>`;
     }));
   }
 
@@ -33,12 +32,9 @@ function search(region, term) {
   $('#result').html(html);
 }
 
-function find(features, term) {
-  return features.filter(f => (
-    f.properties && (
-      (f.properties.crop_name || '').includes(term) ||
-      (f.properties.name || '').includes(term)
-    )
+function find(entries, term) {
+  return entries.filter(f => (
+    (f.name || '').includes(term)
   ));
 }
 

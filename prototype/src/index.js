@@ -16,8 +16,9 @@ $('#intro-text').text(region.loadTitle);
 const layers = [
   // places
   L.featureGroup(region.data.places.map(place => {
+    const icon = getIcon(place.type) || getIcon('place-default');
     const _popupData = placePopupData(place);
-    return L.marker([place.lat, place.lon]).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
+    return L.marker([place.lat, place.lon], {icon: icon}).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
   })),
   // land boundaries
   L.geoJson(region.geojson.lands, {
