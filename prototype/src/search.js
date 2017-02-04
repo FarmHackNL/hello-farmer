@@ -34,7 +34,7 @@ function search(region, term) {
 
 function find(entries, term) {
   return entries.filter(f => (
-    (f.name || '').includes(term)
+    (f.name || '').toLowerCase().includes(term.toLowerCase())
   ));
 }
 
