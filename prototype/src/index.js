@@ -13,12 +13,22 @@ const region = regions[regionId] || regions.vechtdal;
 const map = L.map('app').setView([region.loadPosition[0], region.loadPosition[1]], region.loadPosition[2]);
 $('#intro-text').text(region.loadTitle);
 
+// marker objects on map for showing/hiding
+const map_objs = {
+  places: {markers: []},
+  lands: {markers: [], boundaries: []},
+};
+
 const layers = [
   // places
   L.featureGroup(region.data.places.map(place => {
     const icon = getIcon(place.type) || getIcon('place-default');
     const _popupData = placePopupData(place);
-    return L.marker([place.lat, place.lon], {icon: icon}).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
+    const marker = L.marker([place.lat, place.lon], {icon: icon}).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
+    marker.on('mouseover', () => { highlightPlace(place); });
+    marker.on('mouseout', () => { highlightPlace(); });
+    map_objs.places.markers[place.id] = marker;
+    return marker;
   })),
   // land boundaries
   L.geoJson(region.geojson.lands, {
@@ -32,8 +42,15 @@ const layers = [
         const geom = L.polygon(feature.geometry.coordinates[0].map(a => L.latLng([a[1], a[0]])));
         const pos = geom.getBounds().getCenter();
         const icon = getIcon(feature.properties.produce_id) || getIcon(feature.properties.crop_id);
-        icon && bindPopup(L.marker(pos, {icon: icon})).addTo(map);
-      };
+        if (icon) {
+          const marker = L.marker(pos, {icon: icon});
+          bindPopup(marker).addTo(map);
+          marker.on('mouseover', () => { highlightLand(feature.properties); });
+          marker.on('mouseout', () => { highlightLand(); });
+          map_objs.lands.markers[feature.properties.id] = marker;
+        }
+      }
+      map_objs.lands.boundaries[feature.properties.id] = layer;
     }
   }),
   // OSM tiles
@@ -76,6 +93,76 @@ function landPopupData(props) {
 
 function placePopupData(feature) {
   return landPopupData(feature);
+}
+
+function highlightPlace(place) {
+  // gather places and lands that are related to this place
+  let related_place_ids = [];
+  let related_land_ids = [];
+  if (place) {
+    // add the place itself
+    related_place_ids.push(parseInt(place.id));
+    region.data.products.forEach(product => {
+      // add retailers and lands of products by this place
+      if (product.producer_ids.split(/\s*,\s*/).includes(String(place.id))) {
+        related_place_ids.push(...product.retailer_ids.split(/\s*,\s*/).map(parseInt));
+        related_land_ids.push(...product.land_ids.split(/\s*,\s*/).map(parseInt));
+      }
+      // if retailer, add producers and lands it's selling
+      if (product.retailer_ids.split(/\s*,\s*/).includes(String(place.id))) {
+        related_place_ids.push(...product.producer_ids.split(/\s*,\s*/).map(parseInt));
+        related_land_ids.push(...product.land_ids.split(/\s*,\s*/).map(parseInt));
+      }
+    });
+    // add lands managed by this place
+    region.geojson.lands.features.forEach(feature => {
+      const land = feature.properties;
+      if (land.producer_id == place.id) related_land_ids.push(parseInt(land.id));
+    });
+  }
+  // and update status of map objects
+  map_objs.places.markers.forEach((marker, i) => {
+    const highlight = !place || related_place_ids.includes(i);
+    marker.setOpacity(highlight ? 1 : 0.3);
+  });
+  map_objs.lands.markers.forEach((marker, i) => {
+    const highlight = !place || related_land_ids.includes(i);
+    marker.setOpacity(highlight ? 1 : 0.3);
+  });
+  map_objs.lands.boundaries.forEach((boundary, i) => {
+    const highlight = !place || related_land_ids.includes(i);
+    //boundary.setOpacity(highlight ? 1 : 0.3);
+  });
+}
+
+function highlightLand(land) {
+  // gather places that are related to this land
+  let related_place_ids = [];
+
+  if (land) {
+    // add producer
+    if (land.producer_id) related_place_ids.push(parseInt(land.producer_id));
+    region.data.products.forEach(product => {
+      // if product references this, add retailer
+      if (product.land_ids.split(/\s*,\s*/).includes(String(land.id))) {
+        related_place_ids.push(...product.retailer_ids.split(/\s*,\s*/).map(parseInt));
+      }
+    });
+  }
+
+  // and update status of map objects
+  map_objs.places.markers.forEach((marker, i) => {
+    const highlight = !land || related_place_ids.includes(i);
+    marker.setOpacity(highlight ? 1 : 0.3);
+  });
+  map_objs.lands.markers.forEach((marker, i) => {
+    const highlight = !land || i === parseInt(land.id);
+    marker.setOpacity(highlight ? 1 : 0.3);
+  });
+  map_objs.lands.boundaries.forEach((boundary, i) => {
+    const highlight = !land || i === parseInt(land.id);
+    //boundary.setOpacity(highlight ? 1 : 0.3);
+  });
 }
 
 // easter egg
