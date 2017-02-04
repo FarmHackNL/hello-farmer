@@ -3,6 +3,24 @@
 Prototype app.
 
 
+## Update data
+
+Data is currently stored in [CSV](https://en.wikipedia.org/wiki/Comma-separated_values) and
+[GeoJSON](https://en.wikipedia.org/wiki/GeoJSON) files. Edit them, for example, with
+a spreadsheet (like [LibreOffice](http://libreoffice.org/)) and a
+[GIS](https://en.wikipedia.org/wiki/Geographic_information_system) editor (like [geojson.io](http://geojson.io))
+respectively.
+
+Each region has its own set of files (they start with the same name). For _Vechtdal_, for
+example, you'll find [places](https://github.com/FarmHackNL/hello-farmer/blob/master/prototype/vechtdal.places.csv)
+containing farmers and retailers; [lands](https://github.com/FarmHackNL/hello-farmer/blob/master/prototype/vechtdal.lands.geojson)
+with lots, with `producer_id` referencing an `id` in _places_; and [products](https://github.com/FarmHackNL/hello-farmer/blob/master/prototype/vechtdal.products.csv)
+that reference zero or more places by `retailer_ids` for shops, as well by `producer_ids` for
+farmers, and _lands_ by `land_ids`.
+
+Note that `icon`, `type` and `crop_id` and `produce_id` are identifiers for [icons](https://github.com/FarmHackNL/hello-farmer/tree/master/prototype/src/assets/icons).
+
+
 ## Develop
 
  ```sh
