@@ -8,31 +8,21 @@ import search from './search';
 
 // allow to select region by hashtag
 const regionId = location.hash.substr(1); // strip first '#' character
-const region = regions[regionId] || regions.zwolle;
+const region = regions[regionId] || regions.vechtdal;
 
 const map = L.map('app').setView([region.loadPosition[0], region.loadPosition[1]], region.loadPosition[2]);
 $('#intro-text').text(region.loadTitle);
 
 const layers = [
   // places
-  L.geoJson(region.geojson.places, {
-    onEachFeature: (feature, layer) => {
-      const _popupData = placePopupData(feature);
-      const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
-      // add popup
-      bindPopup(layer);
-      // add marker
-      if (feature.geometry && feature.geometry.type === 'Point') {
-        const pos = feature.geometry.coordinates;
-        const icon = getIcon(feature.properties.type) || getIcon(feature.properties.crop_id);
-        icon && bindPopup(L.marker(pos, {icon: icon})).addTo(map);
-      };
-    }
-  }),
+  L.featureGroup(region.data.places.map(place => {
+    const _popupData = placePopupData(place);
+    return L.marker([place.lat, place.lon]).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
+  })),
   // land boundaries
   L.geoJson(region.geojson.lands, {
     onEachFeature: (feature, layer) => {
-      const _popupData = landPopupData(feature);
+      const _popupData = landPopupData(feature.properties);
       const bindPopup = (el) => el.bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
       // add popup
       bindPopup(layer);
@@ -54,8 +44,7 @@ const layers = [
 loadanim(map, region.position, layers);
 layers.map((layer) => layer.addTo(map));
 
-function landPopupData(feature) {
-  const props = feature.properties;
+function landPopupData(props) {
   let items = [];
   items.push([`
     <h2 class="pre-title">${props.producer || region.producerPlaceholder}</h2>
@@ -80,7 +69,7 @@ function landPopupData(feature) {
       `<em>Gezaaid</em> ${props.sowingDate}` + (props.harvestDate ? `, <em>oogst</em> ${props.harvestDate}` : '')
     , false]);
   }
-  props.info_url && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', props.info_url])
+  props.website && items.push(['Lees meer over de boer <i class="glyphicon glyphicon-chevron-right pull-right" style="margin-top: 3px"></i>', `http://${props.website}/`])
   return '<div class="listgroup map-popup">' + items.map(i => `<${i[1] ? `a href='${i[1]}'` : 'div'} class="list-group-item">${i[0]}</${i[1] ? 'a' : 'div'}>`).join('') + '</div>';
 }
 

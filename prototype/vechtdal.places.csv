@@ -1,0 +1,44 @@
+"id","name","type","crop_id","address","zipcode","city","country","lat","lon","website","image_url"
+1,"Wijngoed de Reestlandhoeve","farm","grape","Hoofdweg 21","7707 RB","Balkbrug","NL","52.6322317","6.3283564","www.reestlandhoeve.nl","https://reestlandhoeve.com/wp-content/uploads/2015/10/Tasty-Tales.png"
+2,"Vechtdalhoeve","farm","cow","Ridderinkweg 3","7735 KG","Arriën","NL","52.5261242","6.4495527","www.vechtdalhoeve.nl","http://vechtdalhoeve.nl/images/%c2%a9%206308009132.jpg"
+3,"IJshoeve Bosman","shop","dairy","Posthoornweg 38","7781 PK","De Krim","NL","52.6438177","6.5929579","www.ijshoevebosman.nl","http://ijshoevebosman.nl/images/boerderij.jpg"
+4,"Bierbrouwerij De Pauw","brewery","beer","Achterbroekweg 1","7731 PN","Ommen","NL","52.478629","6.4726702","www.pauwbier.nl","http://pauwbier.nl/images/Brouwerij.jpg"
+5,"Slothoeve Eieren","farm","egg","Slotweg 25","7691 PN","Bergentheim","NL","52.5269846","6.6015539","www.boumavoerwortelen.nl","http://www.boumavoerwortelen.nl/images/paginas/50_thumb_25_1.jpg"
+6,"Aspergeboerderij Het Nijenhuis","farm",,"Rheezerweg 127","7795 DB","Diffelen","NL","52.5244169","6.5592645","www.hetnijenhuis.nl",
+7,"Vechtdal Eieren","farm","egg","Varsenerweg 5b","7731 PZ","Ommen","NL","52.5191969","6.3893746","www.vechtdaleieren.nl","https://image.jimcdn.com/app/cms/image/transf/dimension=960x10000:format=jpg/path/s7d013b79b48fead6/image/i1c216aecc03f1f18/version/1444201960/image.jpg"
+8,"Boerderij de Huppe","farm",,"Kleine Veerweg 9","8017 BP","Zwolle","NL","52.4867274","6.0886019","www.dehuppe.nl",
+9,"Tuinderij Ernie v.d. Kolk","farm","asparagus","Hout Es 4","7722 VP","Dalfsen","NL","52.5259959","6.3383257","www.ernievanderkolk.nl","http://c866083.r83.cf3.rackcdn.com/cms-5323-1362835487.jpg"
+10,"De Meulenhorst",,,"Achterbroekweg 1","7731 PN","Ommen","NL","52.478629","6.4726702","www.meulenhorst.nl",
+11,"De Varsenerhof",,,"Emslandweg 6","7731 RP","Ommen","NL","52.5354191","6.3990141","www.varsenerhof.nl",
+12,"De Arendshorst",,,"Arendhorsterweg 1","7731 RC","Varssen","NL","52.5253626","6.366777","www.arendshorstommen.nl",
+13,"Heileuver Kaas & Kunst","farm","dairy","Dalmsholterdijk 17","8146 PE","Dalmsholte","NL","52.4820209","6.3439253","www.heileuver.nl",
+14,"Grotemarsink",,,"Coevorderweg 40","7737 PG","Stegeren","NL","52.5545488","6.5180981",,
+15,"De Bessentuin","farm",,"Bruchterweg 26","7696 BA ","Brucht","NL","52.5592002","6.6207157","www.bessentuin.nl",
+16,"Buffelfarm Kelder B.V","farm","cow","Toeslagweg 5","7791 RS ","Radewijk","NL","52.574125","6.6841998","www.buffelfarm.nl",
+17,"Vleeshandel Woertink",,,"Zwolseweg 211","7707 AG","Balkbrug","NL","52.5960728","6.3476565",,
+18,"Fa. W. Kosse &Co",,,"Nieuwelandstraat 5a","7731 TH","Ommen","NL","52.5274303","6.426919","www.kossevlees.nl",
+19,"Firma Lubbers",,,"Stegerensallee 8","7701 PL","Dedemsvaart","NL","52.5893877","6.4844006",,
+20,"Gebr. Oldehinkel",,,"Venneweg 1","7798 CW","Collendoorn","NL","52.5944985","6.6011273",,
+21,"Wim Kosse",,,"Stegerensallee 23","7701 PJ","Dedemsvaart","NL","52.5883603","6.4827518","www.kossevlees.nl",
+22,"Wolvarken Hoeve","farm",,"Nieuweweg 10/11","7739 PK","Vinkenbuurt","NL","52.5863826","6.3422658",,
+23,"Puur Vechtdal","farm","dairy","Balkerweg 36","7731 RZ","Ommen","NL","52.5498732","6.4009233","www.puurvechtdal.nl",
+24,"E. Schwieters , akkerbouw","farm",,"Friesendorpstraat 46","7731 EW","Ommen","NL","52.5241795","6.4224807",,
+25,"Slagerij Kouwen",,,"Weth. Imminkstraat 16","8148 PW","Lemele","NL","52.4537183","6.4147253","www.kouwen.uw.slager.nl",
+26,"Slagerij Kouwen",,,"Burg. Backxlaan 339","7711 AD","Nieuwleusen","NL","52.5910991","6.2819654","www.slagerijkouwen.nl",
+27,"Vechtdal Food Catering","restaurant",,"Voorbrug 1","7731 BB","Ommen","NL","52.5168604","6.4225595","www.vechtdalfood.nl",
+28,"Bakkerij ten Brinke ","bakery",,"Kruisstraat 2","7731 CR","Ommen ","NL","52.5193144","6.4233546","www.bakkerijtenbrinke.nl",
+29,"Nijenhuis Ijsspecialiteiten","farm","dairy","Statumweg 15","8148 TB","Lemele","NL","52.4396233","6.3844243",,
+30,"Bakkerij v.d. Most","bakery","graan","Schoolstraat 5","8152 AP","Lemelerveld","NL","52.4439442","6.3410425","www.bakkerijvandermost.nl",
+31,"Slager Hoff",,,"Adm. Helfrichstraat 121","7772 BR","Hardenberg","NL","52.5755115","6.6207976","www.slagerijhoff.nl",
+32,"De Zon","hotel",,"Voorbrug 1","7731 BB ","Ommen","NL","52.5168604","6.4225595","www.hoteldezon.nl",
+33,"Hotel Paping","hotel",,"Stationsweg 29  ","7731 AX ","Ommen","NL","52.5107175","6.4193361","www.hotelpaping.nl",
+34,"Herberg De Klomp ","hotel",,"Vilsterseweg 10","7734 DD ","Vilsteren","NL","52.5110154","6.353952","www.herbergdeklomp.nl",
+35,"Restaurant De Mandarijn ","restaurant",," Mandjesstraat 4 ","8011 RM ","Zwolle","NL","52.5126923","6.0977206","www.demandarijn.nl",
+36,"de Groene Marke","shop",,"De poffert 5","7731 CV","Ommen","NL","52.5183182","6.4223075","www.degroenemarke.nl",
+37,"de Groene Marke","shop",,"Molenstraat 16","7721 AR","Dalfsen","NL","52.503387","6.2573282","www.degroenemarke.nl",
+38,"Bistro De Rheezerbelten","restaurant",,"Grote Beltenweg 1","7771SX","Hardenberg","NL","52.5609075","6.5907928","www.rheezerbelten.nl",
+39,"Herberg de witte Gans","hotel",,"Heinoseweg 30","7722 JP","Dalfsen","NL","52.4689146","6.2480549","www.wittegans.nl",
+40,"Pro-Elan Ommen",,,"Beerzerweg 5e","7731 PA","Ommen","NL","52.5104991","6.4449784","www.pro-elan.nl",
+41,"boerderijwinkel Zandman","shop",,"Marsdijk 4","7736 PL","Beerze","NL","52.5139044","6.5414832","www.zandmanbeerze.nl","http://melkveebedrijfzandman.nl/images/sampledata/fruitshop/IMG_2895.JPG"
+42,"De Vechtdalkok","restaurant",,"Dalmsholterdijk 6a","8146  PG","Dalmsholte","NL","52.4727927","6.3699978","www.vechtdalkok.nl",
+43,"Catering & Partyservice ""Sallands Boertje""","restaurant",,"Handelsweg 11a","8152 BN","Lemelerveld","NL","52.4409793","6.3355208","www.cateringdehaan.nl",

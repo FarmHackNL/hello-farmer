@@ -7,8 +7,11 @@ export default {
     producerPlaceholder: 'Vechtdal boer',
     geojson: {
       lands: require('../vechtdal.lands.geojson'),
-      places: require('../vechtdal.places.geojson'),
     },
+    data: {
+      places: require('dsv!../vechtdal.places.csv'),
+      products: require('dsv!../vechtdal.products.csv'),
+    }
   },
   zwolle: {
     id: 'zwolle',
@@ -18,7 +21,10 @@ export default {
     producerPlaceholder: 'Stadslanderij boer',
     geojson: {
       lands: require('../zwolle.lands.geojson'),
-      places: require('../zwolle.places.geojson'),
     },
+    data: {
+      places: [],
+      products: [],
+    }
   },
 };
