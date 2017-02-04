@@ -90,6 +90,25 @@
       width: 180px;
       margin: 4px;
     }
+    #info {
+      z-index: 750;
+      display: none; /* ui shows when desired */
+      position: absolute;
+      top: 60px;
+      right: 60px;
+      width: 250px;
+      min-height: 125px;
+      background-color: rgba(255,255,255,0.9);
+      border-radius: 5px;
+      padding: 4px;
+      opacity: 0.9;
+      text-align: center;
+    }
+    #info img, #info .img-placeholder {
+      max-width: 240px;
+      min-height: 50px;
+      max-height: 160px;
+    }
     /* http://stackoverflow.com/a/19461564/2866660 */
     #intro-container {
       z-index: 750;
@@ -148,6 +167,7 @@
     <div id="app"></div>
     <div id="search">Hallo boer, heb je ook <input type="text">?</div>
     <div id="result"></div>
+    <div id="info"></div>
     <div id="note">Please note this is not real data!</div>
     <div id="logo"></div>
     <div id="intro-container"><div id="intro"><div id="intro-text">...</div></div></div>

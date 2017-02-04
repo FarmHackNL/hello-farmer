@@ -3,13 +3,10 @@ import L from 'leaflet';
 import {debounce} from 'lodash';
 import loadanim from './loadanim';
 import {getIcon} from './icon';
-import regions from './regions';
+import {region} from './regions';
 import search from './search';
 import {highlightPlace, highlightLand} from './highlight';
 
-// allow to select region by hashtag
-const regionId = location.hash.substr(1); // strip first '#' character
-const region = regions[regionId] || regions.vechtdal;
 
 const map = L.map('app').setView([region.loadPosition[0], region.loadPosition[1]], region.loadPosition[2]);
 $('#intro-text').text(region.loadTitle);
@@ -26,8 +23,8 @@ const layers = [
     const icon = getIcon(place.type) || getIcon('place-default');
     const _popupData = placePopupData(place);
     const marker = L.marker([place.lat, place.lon], {icon: icon}).bindPopup(_popupData, {minWidth: 250, maxWidth: 380});
-    marker.on('mouseover', () => { highlightPlace(region, layers, markers, place); });
-    marker.on('mouseout', () => { highlightPlace(region, layers, markers); });
+    marker.on('mouseover', () => { highlightPlace(layers, markers, place); });
+    marker.on('mouseout', () => { highlightPlace(layers, markers); });
     markers.places[place.id] = marker;
     return marker;
   })),
@@ -46,16 +43,16 @@ const layers = [
         if (icon) {
           const marker = L.marker(pos, {icon: icon});
           bindPopup(marker).addTo(map);
-          marker.on('mouseover', () => { highlightLand(region, layers, markers, feature.properties); });
-          marker.on('mouseout', () => { highlightLand(region, layers, markers); });
+          marker.on('mouseover', () => { highlightLand(layers, markers, feature.properties); });
+          marker.on('mouseout', () => { highlightLand(layers, markers); });
           markers.lands[feature.properties.id] = marker;
         }
       }
     }
   }).on('mouseover', e => {
-    highlightLand(region, layers, markers, e.layer.feature.properties);
+    highlightLand(layers, markers, e.layer.feature.properties);
   }).on('mouseout', e => {
-    highlightLand(region, layers, markers);
+    highlightLand(layers, markers);
   }),
   // OSM tiles
   L.tileLayer('http://{s}.tile.osm.org/{z}/{x}/{y}.png', {

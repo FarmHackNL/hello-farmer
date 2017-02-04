@@ -1,4 +1,5 @@
-export default {
+
+export const regions = {
   vechtdal: {
     id: 'vechtdal',
     position: [52.5267896,6.3374302, 16],     // Tuinderij Ernie van der Kolk
@@ -28,3 +29,9 @@ export default {
     }
   },
 };
+
+// allow to select region by hashtag
+export const regionId = location.hash.substr(1); // strip first '#' character
+export const region = regions[regionId] || regions.vechtdal;
+
+export default {region, regionId, regions};

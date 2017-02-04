@@ -1,5 +1,8 @@
+import $ from 'jquery';
+import {region} from './regions';
+import {infoPlace, infoLand} from './info';
 
-export function highlightPlace(region, layers, markers, place) {
+export function highlightPlace(layers, markers, place) {
   // gather places and lands that are related to this place
   let related_place_ids = [];
   let related_land_ids = [];
@@ -37,9 +40,15 @@ export function highlightPlace(region, layers, markers, place) {
     const highlight = !place || related_land_ids.includes(parseInt(layer.feature.properties.id));
     layer.getElement().style.opacity = highlight ? 1 : 0.3;
   });
+  // then show info box
+  if (place) {
+    $('#info').html(infoPlace(place)).stop().fadeIn();
+  } else {
+    $('#info').stop().fadeOut();
+  }
 }
 
-export function highlightLand(region, layers, markers, land) {
+export function highlightLand(layers, markers, land) {
   // gather places that are related to this land
   let related_place_ids = [];
 
@@ -67,6 +76,12 @@ export function highlightLand(region, layers, markers, land) {
     const highlight = !land || parseInt(land.id) === parseInt(layer.feature.properties.id);
     layer.getElement().style.opacity = highlight ? 1 : 0.3;
   });
+    // then show info box
+  if (land) {
+    $('#info').html(infoLand(land)).stop().fadeIn();
+  } else {
+    $('#info').stop().fadeOut();
+  }
 }
 
 export default {highlightLand, highlightPlace};
