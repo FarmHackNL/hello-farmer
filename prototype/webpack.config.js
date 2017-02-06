@@ -3,7 +3,10 @@ var pkg = require('./package.json');
 var config = require('./src/config');
 
 module.exports = {
-  entry: './src/index.js',
+  entry: [
+    'babel-polyfill',
+    './src/index.js',
+  ],
   module: {
     loaders: [
       {
@@ -12,7 +15,7 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           plugins: ['transform-object-rest-spread'],
-          presets: ['es2015', 'react']
+          presets: ['es2015', 'react'],
         }
       },
       {test: /\.(json|geojson)$/, loader: 'json-loader'},
